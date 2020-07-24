@@ -17,10 +17,11 @@ ActiveRecord::Schema.define(version: 2020_07_15_151112) do
 
   create_table "logs", force: :cascade do |t|
     t.integer "user_id"
-    t.datetime "date"
     t.integer "water"
     t.integer "mood"
     t.string "note"
+    t.string "title"
+    t.date "start"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

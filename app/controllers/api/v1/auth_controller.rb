@@ -7,8 +7,12 @@ class Api::V1::AuthController < ApplicationController
         if user 
             render json: {message: "log in", user_logs: user.logs, user_data: user, error: false}
         else
-            render json: {message: 'You need to be better', error: true}
+            render json: {message: 'wrong id or pass', error: true}
         end
     end
+
+    def profile
+
+    end 
 
 end
