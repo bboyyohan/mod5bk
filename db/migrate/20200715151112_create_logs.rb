@@ -11,7 +11,7 @@ class CreateLogs < ActiveRecord::Migration[6.0]
       t.string :title
       t.date :start
 
-      t.timestamps
+      # t.timestamps
     end
   end
 end

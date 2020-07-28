@@ -33,18 +33,33 @@ l4 = Log.create(user_id: u2.id, title: "Passed my interview!", start: "2020-07-1
 l5 = Log.create(user_id: u1.id, title: "Okay..", start: "2020-07-16", water: 9, mood: 3)
 
 
+s1 = Sleep.create(log_id: l1.id, start_time: "22:00", end_time: "7:00")
+s2 = Sleep.create(log_id: l2.id, start_time: "20:00", end_time: "5:00")
+s3 = Sleep.create(log_id: l3.id, start_time: "18:00", end_time: "6:00")
+s4 = Sleep.create(log_id: l4.id, start_time: "23:00", end_time: "1:00")
+s5 = Sleep.create(log_id: l5.id, start_time: "21:00", end_time: "4:00")
 
-s1 = Sleep.create(log_id: l1.id, quantity: 3)
-s2 = Sleep.create(log_id: l2.id, quantity: 4)
-s3 = Sleep.create(log_id: l3.id, quantity: 6)
-s4 = Sleep.create(log_id: l4.id, quantity: 7)
-s5 = Sleep.create(log_id: l5.id, quantity: 8)
 
-m1 = Meal.create(log_id: l1.id, quantity: 2)
-m2 = Meal.create(log_id: l2.id, quantity: 3)
-m3 = Meal.create(log_id: l3.id, quantity: 3)
-m4 = Meal.create(log_id: l4.id, quantity: 1)
-m5 = Meal.create(log_id: l5.id, quantity: 3)
+m1 = Meal.create(log_id: l1.id, time: "15:00", name: "hot dog")
+m2 = Meal.create(log_id: l2.id, time: "2:00", name: "pizza")
+m3 = Meal.create(log_id: l3.id, time: "4:00", name: "rice")
+m4 = Meal.create(log_id: l4.id, time: "23:00", name: "frog")
+m5 = Meal.create(log_id: l5.id, time: "14:00", name: "duck")
+
+
+
+
+# s1 = Sleep.create(log_id: l1.id, quantity: 3)
+# s2 = Sleep.create(log_id: l2.id, quantity: 4)
+# s3 = Sleep.create(log_id: l3.id, quantity: 6)
+# s4 = Sleep.create(log_id: l4.id, quantity: 7)
+# s5 = Sleep.create(log_id: l5.id, quantity: 8)
+
+# m1 = Meal.create(log_id: l1.id, quantity: 2)
+# m2 = Meal.create(log_id: l2.id, quantity: 3)
+# m3 = Meal.create(log_id: l3.id, quantity: 3)
+# m4 = Meal.create(log_id: l4.id, quantity: 1)
+# m5 = Meal.create(log_id: l5.id, quantity: 3)
 
 
 # m6 = Meal.create(log_id: l1.id, food: "chicken", time: )

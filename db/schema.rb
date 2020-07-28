@@ -21,41 +21,24 @@ ActiveRecord::Schema.define(version: 2020_07_28_020043) do
     t.integer "mood"
     t.string "title"
     t.date "start"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "meals", force: :cascade do |t|
     t.integer "log_id"
-    t.integer "quantity"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.time "time"
+    t.string "name"
   end
 
   create_table "sleeps", force: :cascade do |t|
     t.integer "log_id"
-    t.integer "quantity"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.time "start_time"
+    t.time "end_time"
   end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "username"
     t.string "password_digest"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
 end
-
-
-meals
-:log_id
-:food_name
-:time_start
-
-sleeps
-:log_id
-:time_start
-:time_end
