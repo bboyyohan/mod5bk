@@ -47,4 +47,4 @@ m4 = Meal.create(log_id: l4.id, quantity: 1)
 m5 = Meal.create(log_id: l5.id, quantity: 3)
 
 
-m6 = Meal.create(log_id: l1.id, food: "chicken", time: )
+# m6 = Meal.create(log_id: l1.id, food: "chicken", time: )

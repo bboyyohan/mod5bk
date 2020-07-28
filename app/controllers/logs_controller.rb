@@ -7,7 +7,9 @@ class LogsController < ApplicationController
     def create
         log = Log.new(log_params)
         log.save
-        render json: log
+        log.sleeps.new(quantity: params[:sleeps])
+        log.meals.new(quantity: params[:meals])
+        render json: log.as_json(:include => [:sleeps, :meals])
     end 
 
     def show

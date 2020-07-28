@@ -48,3 +48,14 @@ ActiveRecord::Schema.define(version: 2020_07_28_020043) do
   end
 
 end
+
+
+meals
+:log_id
+:food_name
+:time_start
+
+sleeps
+:log_id
+:time_start
+:time_end
