@@ -6,7 +6,7 @@ class CreateLogs < ActiveRecord::Migration[6.0]
       # changed from t.datetime
       t.integer :water
       t.integer :mood
-      t.string :note
+      # t.string :note
 
       t.string :title
       t.date :start

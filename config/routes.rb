@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :sleeps
+  resources :meals
   resources :logs
   # resources :users
   
